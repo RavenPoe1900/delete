@@ -4,11 +4,11 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { LoginDto } from '../domain/login.dto';
 
 import { Prisma, Role, User } from '@prisma/client';
-import { SignUpDto } from '../domain/sign-up.dto';
-import { LoginResponseDto } from '../domain/login-response.dto'; // 👈 DTO con access_token
+import { LoginResponseDto } from 'src/auth/application/dtos/login-response.dto';
+import { LoginDto } from 'src/auth/application/dtos/login.dto';
+import { SignUpDto } from 'src/auth/application/dtos/sign-up.dto';
 import { UsersService } from 'src/modules/users/application/services/users.service';
 import {
   hashPassword,

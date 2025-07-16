@@ -7,18 +7,18 @@ import {
   Post,
   Request,
 } from '@nestjs/common';
-import { Public } from '../domain/public.decorator';
-import { AuthService } from '../application/auth.service';
-import { LoginDto } from '../domain/login.dto';
+import { Public } from '../../application/dtos/public.decorator';
+import { LoginDto } from '../../application/dtos/login.dto';
 import { ApiTags } from '@nestjs/swagger';
-import { LoginResponseDto } from '../domain/login-response.dto';
-import { SignUpResponseDto } from '../domain/sign-up-response.dto';
+import { LoginResponseDto } from '../../application/dtos/login-response.dto';
+import { SignUpResponseDto } from '../../application/dtos/sign-up-response.dto';
 import { ApiResponseSwagger } from 'src/shared/domain/swagger/response.swagger';
 import { genericSwagger } from 'src/shared/domain/swagger/http.swagger';
 import { IPayload } from 'src/shared/domain/interfaces/payload.interface';
-import { SignUpDto } from '../domain/sign-up.dto';
-import { ChangeUserDto } from '../domain/chance-role.dto';
+import { SignUpDto } from '../../application/dtos/sign-up.dto';
+import { ChangeUserDto } from '../../application/dtos/chance-role.dto';
 import { RequestWithUser } from 'src/shared/domain/interfaces/request-id.interface';
+import { AuthService } from '../../application/services/auth.service';
 
 @ApiTags('Auth')
 @Controller({
