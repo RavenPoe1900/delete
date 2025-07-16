@@ -21,9 +21,9 @@ import {
   updateSwagger,
 } from 'src/shared/infrastructure/swagger/http.swagger';
 import { ApiResponseSwagger } from 'src/shared/infrastructure/swagger/response.swagger';
-import { UpdateUserDto, UserDto } from '../../domain/dtos/user.dtos';
+import { UpdateUserDto, UserDto } from '../../application/dtos/user.dtos';
 import { PaginationUserDto } from '../../application/dtos/pagination-user.dto';
-import { PaginatedResponse } from 'src/shared/domain/dtos/paginationResponse.dto';
+import { PaginatedResponse } from 'src/shared/applications/dtos/paginationResponse.dto';
 import { Roles } from 'src/auth/domain/roles.decorator';
 import { Role } from '@prisma/client';
 import { UserResponseDto } from '../../application/dtos/user-response.dto';

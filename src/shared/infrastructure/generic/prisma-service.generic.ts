@@ -1,6 +1,6 @@
 import { HttpException, Injectable, NotFoundException } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
-import { PaginatedResponse } from '../../domain/dtos/paginationResponse.dto';
+import { PaginatedResponse } from '../../applications/dtos/paginationResponse.dto';
 
 /* ---------- utilidades de tipos ---------- */
 type Prop<T, K extends PropertyKey, Fallback = never> = K extends keyof T

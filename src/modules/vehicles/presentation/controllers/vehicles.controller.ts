@@ -25,7 +25,7 @@ import {
 import { VehicleResponse } from '../../application/dtos/vehicle.response.dto';
 import { UpdateVehicleDto, VehicleDto } from '../../domain/dtos/vehicle.dtos';
 import { PaginationVehicleDto } from '../../application/dtos/pagination-vehicle.dto';
-import { PaginatedResponse } from 'src/shared/domain/dtos/paginationResponse.dto';
+import { PaginatedResponse } from 'src/shared/applications/dtos/paginationResponse.dto';
 
 const C = 'Vehicles';
 

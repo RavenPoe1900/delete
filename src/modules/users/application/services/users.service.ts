@@ -7,9 +7,9 @@ import { Prisma, User } from '@prisma/client';
 
 import { PrismaGenericService } from 'src/shared/infrastructure/generic/prisma-service.generic';
 
-import { UserDto } from '../../domain/dtos/user.dtos';
-import { UserResponseDto } from '../../application/dtos/user-response.dto';
-import { PaginatedResponse } from 'src/shared/domain/dtos/paginationResponse.dto';
+import { UserDto } from '../dtos/user.dtos';
+import { UserResponseDto } from '../dtos/user-response.dto';
+import { PaginatedResponse } from 'src/shared/applications/dtos/paginationResponse.dto';
 
 import { hashPassword } from 'src/shared/applications/utils/hash';
 import { userSelectWithoutPassword } from '../../infrastructure/prisma/user.select';

@@ -8,7 +8,7 @@ import {
   MinLength,
 } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
-import { UserDto } from 'src/modules/users/domain/dtos/user.dtos';
+import { UserDto } from 'src/modules/users/application/dtos/user.dtos';
 
 enum newRole {
   SHIPPER = 'SHIPPER',
